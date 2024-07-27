@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Hirekarma/static/css/main.5b87525c.css",
-    "main.js": "/Hirekarma/static/js/main.354f8512.js",
+    "main.js": "/Hirekarma/static/js/main.d940a0db.js",
     "index.html": "/Hirekarma/index.html",
     "main.5b87525c.css.map": "/Hirekarma/static/css/main.5b87525c.css.map",
-    "main.354f8512.js.map": "/Hirekarma/static/js/main.354f8512.js.map"
+    "main.d940a0db.js.map": "/Hirekarma/static/js/main.d940a0db.js.map"
   },
   "entrypoints": [
     "static/css/main.5b87525c.css",
-    "static/js/main.354f8512.js"
+    "static/js/main.d940a0db.js"
   ]
 }
