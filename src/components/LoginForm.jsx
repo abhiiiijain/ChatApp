@@ -1,25 +1,31 @@
-import { useState } from 'react';
-import axios from 'axios';
+import { useState } from "react";
+import axios from "axios";
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const authObject = { 'Project-ID': "7bfa8423-bdbf-4fcf-95b5-a5fa58233a43", 'User-Name': username, 'User-Secret': password };
+    const authObject = {
+      "Project-ID": "909844cb-ad16-43fa-b6c2-e774ca0b94c1",
+      "User-Name": username,
+      "User-Secret": password,
+    };
 
     try {
-      await axios.get('https://api.chatengine.io/chats', { headers: authObject });
+      await axios.get("https://api.chatengine.io/chats", {
+        headers: authObject,
+      });
 
-      localStorage.setItem('username', username);
-      localStorage.setItem('password', password);
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
 
       window.location.reload();
     } catch (err) {
-      setError('Oops, incorrect credentials.');
+      setError("Oops, incorrect credentials.");
     }
   };
 
@@ -28,8 +34,22 @@ const LoginForm = () => {
       <div className="form">
         <h1 className="title">Chat Application</h1>
         <form onSubmit={handleSubmit}>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="input"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="input"
+            placeholder="Password"
+            required
+          />
           <div align="center">
             <button type="submit" className="button">
               <span>Start chatting</span>
@@ -39,7 +59,6 @@ const LoginForm = () => {
         <h2 className="error">{error}</h2>
       </div>
     </div>
-
   );
 };
 
