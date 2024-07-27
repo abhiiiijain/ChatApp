@@ -1,8 +1,8 @@
 {
-  "name": "hirekarma",
+  "name": "chatApp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhiiiijain.github.io/Hirekarma",
+  "homepage": "https://abhiiiijain.github.io/ChatApp",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.1",
