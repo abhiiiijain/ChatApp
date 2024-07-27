@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hirekarma/static/css/main.5b87525c.css",
+    "main.js": "/Hirekarma/static/js/main.354f8512.js",
+    "index.html": "/Hirekarma/index.html",
+    "main.5b87525c.css.map": "/Hirekarma/static/css/main.5b87525c.css.map",
+    "main.354f8512.js.map": "/Hirekarma/static/js/main.354f8512.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b87525c.css",
+    "static/js/main.354f8512.js"
+  ]
+}
